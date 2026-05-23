@@ -1,0 +1,101 @@
+[2025-05-21T09:00:01.001Z] [INFO] Server started on port 3000
+[2025-05-21T09:00:45.210Z] [INFO] Fetched 5 products
+[2025-05-21T09:01:12.334Z] [INFO] Search for "mouse" returned 0 results
+[2025-05-21T09:01:30.009Z] [INFO] Search for "lamp" returned 0 results
+[2025-05-21T09:02:05.771Z] [INFO] Search for "Ergonomic Mouse" returned 1 results
+[2025-05-21T09:05:18.002Z] [INFO] Cart updated for user 1, product 1
+[2025-05-21T09:06:44.889Z] [INFO] Cart updated for user 1, product 1
+[2025-05-21T09:10:03.120Z] [INFO] Search for "buds" returned 0 results
+[2025-05-21T09:11:55.009Z] [INFO] Search for "glasses" returned 0 results
+[2025-05-21T09:15:07.112Z] [INFO] Cart updated for user 2, product 3
+[2025-05-21T09:20:22.990Z] [WARN] Cart item not found: user=2 product=3
+[2025-05-21T09:20:22.991Z] [WARN] Cart item not found: user=1 product=2
+[2025-05-21T09:31:07.334Z] [INFO] Fetched 5 products
+[2025-05-21T09:35:44.208Z] [INFO] Search for "led" returned 0 results
+[2025-05-21T09:40:30.990Z] [WARN] Cart item not found: user=3 product=4
+[2025-05-21T09:45:11.553Z] [INFO] Cart updated for user 3, product 2
+[2025-05-21T09:50:00.001Z] [INFO] Search for "stand" returned 0 results
+[2025-05-21T09:55:22.778Z] [WARN] Cart item not found: user=1 product=1
+[2025-05-21T10:00:45.334Z] [INFO] Fetched 5 products
+[2026-05-23T20:18:29.019Z] [INFO] Server started on port 3000
+[2026-05-23T20:21:41.004Z] [INFO] Fetched 10 products
+[2026-05-23T20:23:08.200Z] [INFO] Search for "mouse" returned 0 results
+[2026-05-23T20:24:48.151Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:24:56.187Z] [INFO] Search for "lamp" returned 0 results
+[2026-05-23T20:25:13.393Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:25:19.438Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:25:32.789Z] [INFO] Removed product 1 from cart of user 1
+[2026-05-23T20:25:37.108Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:25:40.429Z] [INFO] Removed product 1 from cart of user 1
+[2026-05-23T20:25:42.333Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:25:50.599Z] [INFO] Fetched 10 products
+[2026-05-23T20:26:00.723Z] [INFO] Search for "mouse" returned 0 results
+[2026-05-23T20:26:15.189Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:26:37.389Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:26:37.874Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:26:38.635Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:26:39.354Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:26:40.514Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:26:42.297Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:26:42.813Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:26:43.274Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:27:08.287Z] [INFO] Removed product 1 from cart of user 1
+[2026-05-23T20:27:09.878Z] [WARN] Cart item not found: user=1 product=1
+[2026-05-23T20:29:14.039Z] [INFO] Search for "lamp" returned 0 results
+[2026-05-23T20:29:51.187Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:29:54.348Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:29:59.635Z] [INFO] Search for "mouse" returned 0 results
+[2026-05-23T20:30:01.139Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:30:02.804Z] [INFO] Search for "lamp" returned 0 results
+[2026-05-23T20:30:04.706Z] [INFO] Removed product 1 from cart of user 1
+[2026-05-23T20:30:06.144Z] [WARN] Cart item not found: user=1 product=1
+[2026-05-23T20:36:05.747Z] [INFO] Fetched 10 products
+[2026-05-23T20:36:43.572Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:39:30.287Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T20:48:07.124Z] [INFO] Server started on port 3000
+[2026-05-23T20:48:21.623Z] [INFO] Search for "mouse" returned 0 results
+[2026-05-23T20:48:33.152Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:48:45.575Z] [INFO] Fetched 10 products
+[2026-05-23T20:49:00.067Z] [INFO] Search for "mouse" returned 0 results
+[2026-05-23T20:49:01.092Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:49:33.894Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:54:24.969Z] [INFO] Search for "mouse" returned 0 results
+[2026-05-23T20:56:09.601Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:57:35.643Z] [INFO] Server started on port 3000
+[2026-05-23T20:57:40.447Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T20:57:44.854Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:57:50.514Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T20:57:52.946Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:57:54.186Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T20:57:55.545Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:57:56.752Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T20:58:37.591Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T20:58:39.550Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T20:58:41.758Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T21:00:09.306Z] [INFO] Server started on port 3000
+[2026-05-23T21:00:12.737Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T21:00:18.333Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T21:00:20.845Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T21:00:26.799Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T21:00:28.198Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T21:00:29.017Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T21:00:29.893Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T21:00:30.692Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T21:00:31.401Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T21:00:32.078Z] [INFO] Search for "lamp" returned 2 results
+[2026-05-23T21:00:35.541Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T21:00:37.867Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T21:00:39.526Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T22:59:00.864Z] [INFO] Server started on port 3000
+[2026-05-23T23:00:02.514Z] [INFO] Fetched 10 products
+[2026-05-23T23:00:07.914Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T23:00:11.856Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T23:00:14.970Z] [INFO] Search for "mouse" returned 2 results
+[2026-05-23T23:00:16.198Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T23:00:25.124Z] [INFO] Removed product 1 from cart of user 1
+[2026-05-23T23:00:32.525Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T23:00:34.491Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T23:00:36.599Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T23:00:38.103Z] [INFO] Cart updated for user 1, product 1
+[2026-05-23T23:00:39.586Z] [INFO] Search for "Ergonomic Mouse" returned 2 results
+[2026-05-23T23:00:41.321Z] [INFO] Fetched 10 products
