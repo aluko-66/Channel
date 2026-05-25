@@ -43,20 +43,25 @@ app.get("/api/products/search", (req, res) => {
 
 // POST /api/cart — add item to a user's cart
 // BUG 2: quantity is parsed as a string, not a number — arithmetic produces NaN / wrong totals
+
 app.post("/api/cart", (req, res) => {
   const { user_id, product_id, quantity } = req.body;
    const qty = parseInt(quantity, 10);
-  if (!user_id || !product_id || !quantity) {
+  if (!user_id || !product_id || quantity=== undefined || quantity === null)  {
     return res.status(400).json({ error: "Missing required fields" });
   }
-
+if (!Number.isInteger(qty) || qty <= 0) {
+    return res.status(400).json({ error: "Quantity must be a positive integer" });
+  }
   try {
     const product = db.prepare("SELECT * FROM products WHERE id = ?").get(product_id);
-    if (!product) return res.status(404).json({ error: "Product not found" });
+    if (!product) {
+      return res.status(404).json({ error: "Product not found" });
+    }
 
     // ❌ quantity comes in as a string from JSON body — multiplication may still work
     // but the stored value is a string, and the line_total calculation is wrong:
-    const line_total = product.price * qty;  // works only because JS coerces
+   // const line_total = product.price * qty;  // works only because JS coerces
     // The real bug: quantity is stored as TEXT in SQLite due to no parseInt/parseFloat
     // which breaks any SUM(quantity) queries later
 
@@ -65,17 +70,30 @@ app.post("/api/cart", (req, res) => {
       .get(user_id, product_id);
 
     if (existing) {
-      // ❌ string + number concatenation instead of numeric addition
-      db.prepare("UPDATE cart SET quantity = ? WHERE user_id = ? AND product_id = ?")
-        .run(existing.quantity + qty, user_id, product_id); // "2" + "1" = "21" not 3
-    } else {
+      const updatedQty = existing.quantity + qty;
+      const updatedLineTotal = product.price * updatedQty;
+
+     db.prepare(
+        "UPDATE cart SET quantity = ?, line_total = ? WHERE user_id = ? AND product_id = ?"
+      ).run(updatedQty, updatedLineTotal, user_id, product_id);
+
+      return res.status(200).json({
+        message: "Cart updated",
+        quantity: updatedQty,
+        line_total: updatedLineTotal
+      });
+    }
+
+     const line_total = product.price * qty;
       db.prepare(
         "INSERT INTO cart (user_id, product_id, quantity, line_total) VALUES (?, ?, ?, ?)"
       ).run(user_id, product_id, qty, line_total);
-    }
-
-    logger.info(`Cart updated for user ${user_id}, product ${product_id}`);
-    res.status(200).json({ message: "Cart updated", line_total });
+    
+     return res.status(200).json({
+      message: "Cart updated",
+      quantity: qty,
+      line_total
+    });
   } catch (err) {
     logger.error("Cart update failed: " + err.message);
     res.status(500).json({ error: err.message });
